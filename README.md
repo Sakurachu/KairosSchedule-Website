@@ -3,6 +3,7 @@
 Kairos Schedule 的介绍与下载站点（纯静态，无构建步骤），部署在 Vercel。
 
 - 线上地址：https://kairos-schedule-website.vercel.app（国内直连会被 DNS 污染，绑定自定义域名后可正常访问）
+- GitHub 仓库：https://github.com/Sakurachu/KairosSchedule-Website
 - Vercel 项目：`kairos-schedule-website`（本目录已通过 `vercel link` 关联）
 - 网页版（应用本体）：https://ks.chzih.com
 - Windows 大文件存放：Vercel Blob 存储 `kairos-downloads`（store_bCYbJThQaJ2lGXOB）
@@ -38,6 +39,14 @@ vercel.json     CSP、权限策略等安全响应头与缓存策略
    注意 `.env.local` 含 Blob 令牌，不要提交或外传。
 
 ## 部署
+
+`main` 分支已连接 Vercel，推送后会自动创建生产部署：
+
+```sh
+git push origin main
+```
+
+需要手动部署时也可以执行：
 
 ```sh
 vercel --prod
