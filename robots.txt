@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kairos-schedule-website.vercel.app/sitemap.xml

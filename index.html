@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kairos 日程 Kairos Schedule — 共享日历、协作计划与准时提醒</title>
+  <meta name="description" content="Kairos 日程是面向个人与小团队的日历和计划协作工具：周/日/月多视图、个人与共享日历、计划任务协作、准时提醒，并在网页、Windows 桌面端与 Android 手机端同步账号数据。官方下载站点。" />
+  <meta name="keywords" content="Kairos, Kairos 日程, Kairos Schedule, 共享日历, 日程管理, 团队计划, 提醒, 日历协作" />
+  <link rel="canonical" href="https://kairos-schedule-website.vercel.app/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/icon-512.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kairos-schedule-website.vercel.app/" />
+  <meta property="og:site_name" content="Kairos 日程" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="Kairos 日程 Kairos Schedule — 共享日历、协作计划与准时提醒" />
+  <meta property="og:description" content="面向个人与小团队的日历和计划协作工具。网页、Windows、Android 多端同步，准时提醒，隐私优先。官方下载站点。" />
+  <meta property="og:image" content="https://kairos-schedule-website.vercel.app/assets/og-cover.png" />
+  <meta property="og:image:alt" content="Kairos 日程：共享日历、协作计划与准时提醒" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#3157d5" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0f1222" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Kairos 日程 首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="18" fill="var(--brand-500)" />
+          <circle cx="32" cy="33" r="18" fill="none" stroke="#fff" stroke-width="5" />
+          <path d="M32 22v12l9 5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="32" cy="33" r="2.8" fill="#ffb65a" />
+        </svg>
+        <span class="brand-name">Kairos 日程</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#features">功能</a>
+        <a href="#sync">多端</a>
+        <a href="#download">下载</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换到深色模式" aria-pressed="false" title="切换到深色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4" fill="currentColor" /><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.6v2.4M12 19v2.4M2.6 12h2.4M19 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7" /></g></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 14.2A8.6 8.6 0 0 1 9.8 3.6 8.6 8.6 0 1 0 20.4 14.2Z" fill="currentColor" /></svg>
+        </button>
+        <a class="btn btn-ghost" href="https://ks.chzih.com" target="_blank" rel="noopener">打开网页版</a>
+        <a class="btn btn-primary btn-sm" href="#download">下载应用</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobileNavPanel">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav-panel" id="mobileNavPanel" aria-label="手机端主导航" hidden>
+      <div class="container mobile-nav-links">
+        <a href="#features">功能</a>
+        <a href="#sync">多端</a>
+        <a href="#download">下载</a>
+        <a href="#faq">常见问题</a>
+        <a href="https://ks.chzih.com" target="_blank" rel="noopener">打开网页版 <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-badge"><span class="badge-dot" aria-hidden="true"></span>Kairos Schedule 官方网站</p>
+          <h1>共享日历、协作计划<br /><span class="grad-text">与准时提醒</span></h1>
+          <p class="hero-sub">
+            Kairos 日程是一款面向个人与小团队的日历和计划协作工具。
+            管理每一段安排，邀请伙伴共同维护计划，
+            并在网页、桌面端与手机端之间同步账号数据。
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#download-platforms" data-js="download-windows">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.4 4.5v7H3V5.5Zm8.6-1.2L21 3v8.5h-9.4V4.3ZM3 12.6h7.4v7L3 18.5v-5.9Zm8.6 0H21V21l-9.4-1.3v-7.1Z" fill="currentColor" /></svg>
+              下载 Windows 版
+            </a>
+            <a class="btn btn-secondary btn-lg" href="/downloads/KairosSchedule-1.0.2.apk" download data-js="download-android">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 8.6A5.3 5.3 0 0 1 12 5.6c1.9 0 3.7 1.2 4.8 3l.1-.1 1.7-1.6c.4-.4 1-.1 1 .4l.2 2.7c0 .5-.6.8-1 .6l-2-1.3h-.1c.3.7.5 1.5.5 2.3v4.9c0 .8-.6 1.4-1.4 1.4h-1v2.3a1 1 0 1 1-2 0V20h-1.6v2.3a1 1 0 1 1-2 0V20h-1c-.8 0-1.4-.6-1.4-1.4v-4.9c0-.8.2-1.6.5-2.3h-.1l-2 1.3c-.4.2-1-.1-1-.6l.2-2.7c0-.5.6-.8 1-.4l1.7 1.6.1.1Zm1.5-4.9a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Zm6.6 0a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Z" fill="currentColor" /></svg>
+              下载 Android APK
+            </a>
+            <a class="btn btn-text btn-lg" href="https://ks.chzih.com" target="_blank" rel="noopener">
+              在浏览器中直接使用
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </a>
+          </div>
+          <p class="hero-meta">
+            <span>v0.2.2（Windows）· v1.0.2（Android）</span>
+            <span aria-hidden="true">·</span>
+            <span>Windows 10+ / Android 7.0+</span>
+            <span aria-hidden="true">·</span>
+            <span>免费注册，邮箱验证码登录</span>
+          </p>
+        </div>
+
+        <!-- 纯 CSS 插画：应用界面示意 -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-titlebar">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="mock-title">Kairos 日程 · 10 月 第 1 周</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="chip chip-active">周</span><span class="chip">日</span><span class="chip">月</span>
+              <span class="chip chip-share">共享成员 +2</span>
+            </div>
+            <div class="mock-week">
+              <div class="mock-day"><i>一</i><b>28</b></div>
+              <div class="mock-day"><i>二</i><b>29</b></div>
+              <div class="mock-day"><i>三</i><b>30</b></div>
+              <div class="mock-day mock-day-today"><i>四</i><b>1</b></div>
+              <div class="mock-day"><i>五</i><b>2</b></div>
+              <div class="mock-day"><i>六</i><b>3</b></div>
+              <div class="mock-day"><i>日</i><b>4</b></div>
+            </div>
+            <div class="mock-events">
+              <div class="event event-indigo"><span class="event-time">09:30</span>产品评审会</div>
+              <div class="event event-orange"><span class="event-time">14:00</span>搬家计划 · 打包书籍</div>
+              <div class="event event-teal"><span class="event-time">19:00</span>和朋友打球</div>
+              <div class="event event-ghost"><span class="event-time">22:00</span>月度复盘（提前 15 分钟提醒）</div>
+            </div>
+          </div>
+          <div class="mock-toast">
+            <span class="toast-bell">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.2l-1.4 2.6a.8.8 0 0 0 .7 1.2h13.4a.8.8 0 0 0 .7-1.2L18 12.2V9a6 6 0 0 0-6-6Zm-2 14a2 2 0 1 0 4 0" fill="currentColor" /></svg>
+            </span>
+            <span class="toast-body"><b>准时提醒</b>10 分钟后：团队周会</span>
+          </div>
+          <div class="mock-avatars">
+            <span class="ava ava-1">我</span><span class="ava ava-2">林</span><span class="ava ava-3">陈</span>
+            <span class="ava-note">共同维护同一份计划</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 功能 -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>为“把时间安排好”而设计</h2>
+          <p>从个人日程到多人协作，Kairos 用轻量的方式覆盖计划与提醒。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon fi-indigo" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /><circle cx="12" cy="15" r="1.6" fill="currentColor" /></svg></span>
+            <h3>周 / 日 / 月多视图</h3>
+            <p>用周、日、月视图管理日程，按天规划细节，按周统筹节奏，按月纵览全局。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon fi-orange" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M3.5 19c.6-3 2.9-4.6 5.5-4.6S13.9 16 14.5 19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /><circle cx="16.8" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M16 14.6c2.3.1 4 1.5 4.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></span>
+            <h3>个人与共享日历</h3>
+            <p>创建个人日历安排自己的生活，也可以创建共享日历，把同一份日程开放给伙伴。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon fi-teal" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="m8 12.2 2.6 2.6L16 9.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            <h3>计划与任务协作</h3>
+            <p>邀请伙伴共同维护计划：一起拆解任务、跟进进度，让每一项安排都有人负责。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon fi-orange" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5a5.5 5.5 0 0 0-5.5 5.5v3l-1.3 2.4a.9.9 0 0 0 .8 1.3h12a.9.9 0 0 0 .8-1.3l-1.3-2.4V9A5.5 5.5 0 0 0 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" /><path d="M10 18.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></span>
+            <h3>准时提醒</h3>
+            <p>为日程与计划节点设置提前提醒，重要事项提前知晓；手机应用关闭后仍可接收系统推送提醒。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon fi-indigo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 0-14.9-3M4 12.5a8 8 0 0 0 14.9 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /><path d="M20 4v4.5h-4.5M4 20v-4.5h4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            <h3>多端账号同步</h3>
+            <p>同一个账号在网页、Windows 桌面端与 Android 手机端登录，日程数据实时同步，随时切换设备。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon fi-teal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 5.8v5.4c0 4.4 3 8.1 7 9.3 4-1.2 7-4.9 7-9.3V5.8L12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" /><path d="m9 11.6 2.2 2.2 3.8-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            <h3>隐私优先</h3>
+            <p>不发送营销通知；可以在应用内随时关闭提醒、管理账号，或永久删除账号和关联数据。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 多端 -->
+    <section class="section section-tinted" id="sync">
+      <div class="container">
+        <div class="section-head">
+          <h2>一个账号，三个入口</h2>
+          <p>数据保存在云端并多端同步：在电脑上规划，在手机上接收提醒，在浏览器里随时查看。</p>
+        </div>
+        <div class="sync-grid">
+          <a class="sync-card" href="https://ks.chzih.com" target="_blank" rel="noopener">
+            <span class="sync-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M8 20h8M12 16.5V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></span>
+            <div><h3>网页版</h3><p>无需安装，浏览器即开即用</p></div>
+            <span class="sync-action">打开 →</span>
+          </a>
+          <a class="sync-card" href="#download">
+            <span class="sync-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M10 18.5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></span>
+            <div><h3>Windows 桌面版</h3><p>安装版 / 便携版，v0.2.2</p></div>
+            <span class="sync-action">下载 →</span>
+          </a>
+          <a class="sync-card" href="#download">
+            <span class="sync-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6.5" y="3" width="11" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M10.5 5.5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg></span>
+            <div><h3>Android 应用</h3><p>系统推送提醒，v1.0.2</p></div>
+            <span class="sync-action">下载 →</span>
+          </a>
+        </div>
+        <p class="sync-note">手机应用使用系统推送通道，应用关闭后提醒仍会送达。</p>
+      </div>
+    </section>
+
+    <!-- 下载 -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="section-head">
+          <h2>下载 Kairos 日程</h2>
+          <p>选择你的平台开始使用。所有版本与网页版使用同一账号，数据自动同步。</p>
+        </div>
+
+        <div class="dl-grid" id="download-platforms">
+          <article class="dl-card" data-platform="windows">
+            <div class="dl-head">
+              <span class="dl-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5 10.4 4.5v7H3V5.5Zm8.6-1.2L21 3v8.5h-9.4V4.3ZM3 12.6h7.4v7L3 18.5v-5.9Zm8.6 0H21V21l-9.4-1.3v-7.1Z" fill="currentColor" /></svg></span>
+              <div class="dl-title">
+                <h3>Windows 安装版</h3>
+                <p class="dl-reco" hidden data-js="reco">推荐给你的平台</p>
+              </div>
+            </div>
+            <ul class="dl-specs">
+              <li><span>版本</span><b>0.2.2</b></li>
+              <li><span>大小</span><b>约 106 MB</b></li>
+              <li><span>更新日期</span><b>2026-09-27</b></li>
+              <li><span>系统要求</span><b>Windows 10 及以上（64 位）</b></li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://bcybjthqaj2lgxob.public.blob.vercel-storage.com/desktop/KairosSchedule-Setup-0.2.2.exe" download>
+              下载安装程序（.exe）
+            </a>
+            <details class="dl-checksum">
+              <summary>SHA-256 校验和</summary>
+              <div class="checksum-row">
+                <code>83bdbed4855b54ddcf8bc11a852b05f0b19639db84b5e7ce955ca3e597fee177</code>
+                <button type="button" data-js="copy" data-copy="83bdbed4855b54ddcf8bc11a852b05f0b19639db84b5e7ce955ca3e597fee177">复制</button>
+              </div>
+            </details>
+          </article>
+
+          <article class="dl-card" data-platform="windows">
+            <div class="dl-head">
+              <span class="dl-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5 10.4 4.5v7H3V5.5Zm8.6-1.2L21 3v8.5h-9.4V4.3ZM3 12.6h7.4v7L3 18.5v-5.9Zm8.6 0H21V21l-9.4-1.3v-7.1Z" fill="currentColor" /></svg></span>
+              <div class="dl-title">
+                <h3>Windows 便携版</h3>
+                <p class="dl-reco" hidden data-js="reco">推荐给你的平台</p>
+              </div>
+            </div>
+            <ul class="dl-specs">
+              <li><span>版本</span><b>0.2.2</b></li>
+              <li><span>大小</span><b>约 106 MB</b></li>
+              <li><span>更新日期</span><b>2026-09-27</b></li>
+              <li><span>系统要求</span><b>Windows 10 及以上（64 位）</b></li>
+            </ul>
+            <a class="btn btn-secondary btn-block" href="https://bcybjthqaj2lgxob.public.blob.vercel-storage.com/desktop/KairosSchedule-Portable-0.2.2.exe" download>
+              下载便携版（免安装 .exe）
+            </a>
+            <details class="dl-checksum">
+              <summary>SHA-256 校验和</summary>
+              <div class="checksum-row">
+                <code>32c2ce07a5c9962ccf428cdb05e175c15b48c7c10a3fb9267be48b4e8553ef59</code>
+                <button type="button" data-js="copy" data-copy="32c2ce07a5c9962ccf428cdb05e175c15b48c7c10a3fb9267be48b4e8553ef59">复制</button>
+              </div>
+            </details>
+          </article>
+
+          <article class="dl-card" data-platform="android">
+            <div class="dl-head">
+              <span class="dl-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.2 8.6A5.3 5.3 0 0 1 12 5.6c1.9 0 3.7 1.2 4.8 3l.1-.1 1.7-1.6c.4-.4 1-.1 1 .4l.2 2.7c0 .5-.6.8-1 .6l-2-1.3h-.1c.3.7.5 1.5.5 2.3v4.9c0 .8-.6 1.4-1.4 1.4h-1v2.3a1 1 0 1 1-2 0V20h-1.6v2.3a1 1 0 1 1-2 0V20h-1c-.8 0-1.4-.6-1.4-1.4v-4.9c0-.8.2-1.6.5-2.3h-.1l-2 1.3c-.4.2-1-.1-1-.6l.2-2.7c0-.5.6-.8 1-.4l1.7 1.6.1.1Zm1.5-4.9a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Zm6.6 0a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Z" fill="currentColor" /></svg></span>
+              <div class="dl-title">
+                <h3>Android APK</h3>
+                <p class="dl-reco" hidden data-js="reco">推荐给你的平台</p>
+              </div>
+            </div>
+            <ul class="dl-specs">
+              <li><span>版本</span><b>1.0.2</b></li>
+              <li><span>大小</span><b>约 4.3 MB</b></li>
+              <li><span>更新日期</span><b>2026-09-29</b></li>
+              <li><span>系统要求</span><b>Android 7.0 及以上</b></li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="/downloads/KairosSchedule-1.0.2.apk" download>
+              下载 APK
+            </a>
+            <details class="dl-checksum">
+              <summary>SHA-256 校验和</summary>
+              <div class="checksum-row">
+                <code>9fd5442028899bd4a77eea5446bbb53460dee98e46156d6d1c12806904a7f2de</code>
+                <button type="button" data-js="copy" data-copy="9fd5442028899bd4a77eea5446bbb53460dee98e46156d6d1c12806904a7f2de">复制</button>
+              </div>
+            </details>
+          </article>
+        </div>
+
+        <p class="dl-note">
+          安装包尚未进行代码签名：若 Windows 在安装时显示安全提示，请点击“更多信息 → 仍要运行”。
+          如需帮助，请通过页面底部的邮箱联系我们。
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tinted" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <h2>常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>如何注册和登录？</summary>
+            <p>使用邮箱验证码登录：输入邮箱并填写收到的验证码即可完成注册或登录，无需设置和记住密码。验证码 10 分钟内有效。</p>
+          </details>
+          <details class="faq-item">
+            <summary>网页版、桌面版、手机版是什么关系？</summary>
+            <p>三者使用同一个账号，日程数据保存在云端并自动同步。桌面版与手机版加载的是同一个线上服务，在任何一端做出的修改都会同步到其他设备。</p>
+          </details>
+          <details class="faq-item">
+            <summary>手机应用的提醒是怎么工作的？</summary>
+            <p>Android 应用使用系统通知与推送通道。即使应用已经关闭，到达提醒时间的日程与计划节点仍会以系统通知的形式送达。</p>
+          </details>
+          <details class="faq-item">
+            <summary>我的数据安全吗？会收到营销信息吗？</summary>
+            <p>Kairos 日程不会发送营销通知。你可以在应用内随时关闭提醒、管理账号，或永久删除账号和关联数据。隐私政策见 <a href="https://ks.chzih.com/privacy" target="_blank" rel="noopener">ks.chzih.com/privacy</a>。</p>
+          </details>
+          <details class="faq-item">
+            <summary>安装时 Windows 提示安全警告怎么办？</summary>
+            <p>安装包目前尚未进行代码签名，Windows 可能会显示“Windows 已保护你的电脑”等提示。点击“更多信息”，再选择“仍要运行”即可继续安装。安装前也可以核对页面上的 SHA-256 校验和。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部 CTA -->
+    <section class="section cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>现在就开始，让每段时间都有安排</h2>
+          <p>网页版即刻可用，客户端随时下载。</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#download">获取应用</a>
+          <a class="btn btn-outline-light btn-lg" href="https://ks.chzih.com" target="_blank" rel="noopener">打开网页版</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="18" fill="var(--brand-500)" />
+            <circle cx="32" cy="33" r="18" fill="none" stroke="#fff" stroke-width="5" />
+            <path d="M32 22v12l9 5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="32" cy="33" r="2.8" fill="#ffb65a" />
+          </svg>
+          <span class="brand-name">Kairos 日程</span>
+        </div>
+        <p>共享日历、协作计划与准时提醒，<br />让每段时间都有安排。</p>
+      </div>
+      <nav class="footer-col" aria-label="产品">
+        <h4>产品</h4>
+        <a href="#features">功能介绍</a>
+        <a href="#download">下载应用</a>
+        <a href="https://ks.chzih.com" target="_blank" rel="noopener">网页版</a>
+      </nav>
+      <nav class="footer-col" aria-label="支持">
+        <h4>支持</h4>
+        <a href="#faq">常见问题</a>
+        <a href="mailto:1648558354@qq.com">支持邮箱</a>
+      </nav>
+      <nav class="footer-col" aria-label="法律与隐私">
+        <h4>法律与隐私</h4>
+        <a href="https://ks.chzih.com/privacy" target="_blank" rel="noopener">隐私政策</a>
+        <a href="https://ks.chzih.com/account-deletion" target="_blank" rel="noopener">删除账号</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Kairos Schedule · Kairos 日程</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
