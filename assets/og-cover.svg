@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fbfcfe"/><stop offset="1" stop-color="#edf1ff"/></linearGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#1f376c" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+    <rect x="64" y="55" width="46" height="46" rx="13" fill="#3157d5"/>
+    <circle cx="87" cy="78" r="14" fill="none" stroke="#fff" stroke-width="3.5"/>
+    <path d="M87 69v10l7 4" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="124" y="86" font-size="26" font-weight="700" fill="#19283f">Kairos 日程</text>
+    <text x="64" y="190" font-size="17" font-weight="500" fill="#3157d5">从随手记录，到共同完成</text>
+    <text x="60" y="280" font-size="53" font-weight="750" fill="#19283f">把想法安排好，</text>
+    <text x="60" y="358" font-size="53" font-weight="750" fill="#3157d5">把计划一起完成。</text>
+    <text x="64" y="424" font-size="19" fill="#56657c">随手记 · 今日任务 · 共享日历 · 多人计划</text>
+    <rect x="64" y="482" width="162" height="48" rx="12" fill="#3157d5"/>
+    <text x="88" y="513" font-size="18" font-weight="600" fill="#fff">打开即用 →</text>
+    <text x="248" y="512" font-size="15" fill="#56657c">网页 / Windows / Android</text>
+    <g filter="url(#shadow)">
+      <rect x="695" y="120" width="434" height="397" rx="24" fill="#fff" stroke="#e4e9f2"/>
+      <rect x="717" y="143" width="390" height="43" rx="10" fill="#f3f5fa"/>
+      <rect x="722" y="148" width="119" height="33" rx="7" fill="#fff"/>
+      <text x="748" y="170" font-size="13" font-weight="600" fill="#3157d5">我的一天</text>
+      <text x="876" y="170" font-size="13" fill="#56657c">共同计划</text>
+      <text x="1004" y="170" font-size="13" fill="#56657c">日历安排</text>
+      <text x="725" y="222" font-size="12" fill="#66758b">10 月 21 日 · 星期三</text>
+      <text x="724" y="257" font-size="23" font-weight="700" fill="#19283f">今天，专注几件重要的事</text>
+      <text x="725" y="308" font-size="26" font-weight="650" fill="#3157d5">2</text><text x="750" y="306" font-size="12" fill="#66758b">今日待办</text>
+      <text x="868" y="308" font-size="26" font-weight="650" fill="#19283f">1</text><text x="893" y="306" font-size="12" fill="#66758b">逾期待处理</text>
+      <path d="M725 328h374m-374 66h374m-374 67h374" stroke="#e4e9f2"/>
+      <rect x="725" y="350" width="18" height="18" rx="5" fill="#eaf6f1"/><path d="m729 359 4 4 6-8" stroke="#217664" fill="none" stroke-width="2"/>
+      <text x="755" y="365" font-size="15" fill="#66758b">整理本周的学习笔记</text>
+      <rect x="725" y="418" width="18" height="18" rx="5" fill="#fff" stroke="#d6dfed"/>
+      <text x="755" y="432" font-size="15" font-weight="600" fill="#19283f">确认旅行路线与住宿</text>
+      <rect x="1015" y="413" width="80" height="28" rx="6" fill="#edf1ff"/>
+      <text x="1027" y="432" font-size="11" fill="#3157d5">由我负责</text>
+      <text x="725" y="490" font-size="11" fill="#66758b">想到一件事？先记下来，稍后再安排。</text>
+    </g>
+    <text x="64" y="591" font-size="14" fill="#66758b">kschedule.chzih.com</text>
+    <text x="995" y="591" font-size="11" fill="#66758b">功能示意 · 示例数据</text>
+  </g>
+</svg>
